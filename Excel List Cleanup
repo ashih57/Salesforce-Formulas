@@ -1,0 +1,8 @@
+// Finding First Name
+=LEFT(A1, FIND(" ", A1))
+
+// Finding Last Name
+=MID(A1, FIND(" ", A1)+1, 900)
+
+// Finding Duplicate Emails across Files
+MATCH(F1, 'FILEPATH'!B:B, 0)
